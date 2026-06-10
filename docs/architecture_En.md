@@ -973,3 +973,5 @@ Recommended order:
 ```
 
 This progression avoids coding everything at once and helps keep the project clean at every step.
+
+File generated via GPT 5.5

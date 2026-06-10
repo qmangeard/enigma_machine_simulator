@@ -1127,3 +1127,4 @@ Exemple :
 ```bash
 ./scripts/run_tests.sh
 ```
+Fichier généré via GPT 5.5
