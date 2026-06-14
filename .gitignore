@@ -19,3 +19,4 @@ Makefile
 *.gcno
 *.gcov
 .vscode/
+prog
