@@ -2,7 +2,7 @@
 #include <string.h>
 #include "enigma/input.h"
 
-int is_line_egal(char *, char *);
+int is_line_equal(char *, char *);
 
 int main(void) {
     printf("%s", "==================================\n");
@@ -16,7 +16,7 @@ int main(void) {
             break;
         }
 
-        if(is_line_egal(line, ":quit")){
+        if(is_line_equal(line, ":quit")){
             break;
         }
 
@@ -26,7 +26,7 @@ int main(void) {
     return 0;
 }
 
-int is_line_egal(char * line, char * command){
-    size_t lenght = strlen(command);
-    return strncmp(line, command, lenght) == 0;
+int is_line_equal(char * line, char * command){
+    size_t length = strlen(command);
+    return strncmp(line, command, length) == 0;
 }

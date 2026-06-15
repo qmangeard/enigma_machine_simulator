@@ -15,10 +15,10 @@ int is_lowercase_letter(char character){
     return character >= 'a' && character <= 'z';
 }
 
-int lowercase_to_uppercase(char character){
+char lowercase_to_uppercase(char character){
     // transforms lowercase letter into uppercase letter
     if(is_lowercase_letter(character)){
-        return character - 32;
+        return character - ('a' - 'A');
     }else {
         return character;
     }
