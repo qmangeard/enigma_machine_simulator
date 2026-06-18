@@ -4,6 +4,6 @@
 int is_letter(char);
 int is_uppercase_letter(char);
 int is_lowercase_letter(char);
-int lowercase_to_uppercase(char);
+char lowercase_to_uppercase(char);
 
 #endif

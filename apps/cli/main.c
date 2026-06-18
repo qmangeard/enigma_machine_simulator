@@ -1,26 +1,27 @@
 #include <stdio.h>
 #include <string.h>
 #include "enigma/input.h"
+#include "cli_input.h"
 
 int is_line_equal(char *, char *);
 
 int main(void) {
     printf("%s", "==================================\n");
     printf("%s", "Welcom to enigma machine simulator\n");
+    
     while(1){
-        char * line = NULL;
-        size_t line_size = 0;
 
         printf("%s", "> ");
-        if(getline(&line, &line_size, stdin) == -1){
+
+        char * txt = read_line();
+        if(is_line_equal(txt, ":quit")){
             break;
         }
 
-        if(is_line_equal(line, ":quit")){
-            break;
-        }
+        printf("%s\n", txt);
 
         // TODO launch enigma engine here ! (enigma.c)
+        //free(line);
     }
     
     return 0;

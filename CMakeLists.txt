@@ -4,6 +4,7 @@ project(enigma_machine_simulator VERSION 0.1.0 LANGUAGES C)
 
 add_executable(prog
     apps/cli/main.c
+    apps/cli/cli_input.c
     src/enigma/input.c
 )
 
