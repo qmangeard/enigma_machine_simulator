@@ -21,7 +21,7 @@ int main(void) {
         printf("%s\n", txt);
 
         // TODO launch enigma engine here ! (enigma.c)
-        //free(line);
+        free(txt);
     }
     
     return 0;
