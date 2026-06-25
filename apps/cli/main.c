@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 #include "enigma/input.h"
+#include "enigma/enigma.h"
 #include "cli_input.h"
 
 int is_line_equal(char *, char *);
@@ -19,6 +21,7 @@ int main(void) {
         }
 
         printf("%s\n", txt);
+        
 
         // TODO launch enigma engine here ! (enigma.c)
         free(txt);
