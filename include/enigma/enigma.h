@@ -1,6 +1,6 @@
 #ifndef ENIGMA_H
 #define ENIGMA_H
 
-char enigma(char);
+char *enigma(char[]);
 
 #endif

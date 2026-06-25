@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include "enigma/input.h"
 #include "enigma/enigma.h"
 #include "cli_input.h"
 
@@ -19,11 +18,9 @@ int main(void) {
         if(is_line_equal(txt, ":quit")){
             break;
         }
-
-        printf("%s\n", txt);
         
+        printf("%s", enigma(txt));
 
-        // TODO launch enigma engine here ! (enigma.c)
         free(txt);
     }
     

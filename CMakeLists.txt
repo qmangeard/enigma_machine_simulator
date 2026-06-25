@@ -6,6 +6,7 @@ add_executable(enigma_cli
     apps/cli/main.c
     apps/cli/cli_input.c
     src/enigma/input.c
+    src/enigma/enigma.c
 )
 
 target_include_directories(enigma_cli PRIVATE

@@ -5,5 +5,7 @@ int is_letter(char);
 int is_uppercase_letter(char);
 int is_lowercase_letter(char);
 char lowercase_to_uppercase(char);
+int txt_length(char txt[]);
+char * transform_txt(char ipt[]);
 
 #endif
